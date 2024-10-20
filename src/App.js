@@ -1,40 +1,29 @@
 //  import logo from './logo.svg';
 import './App.css';
-
+import { useState } from 'react';
+import { Component } from 'react';
 import EventPractice from './component/EventPractice';
 import ValidationSample from './component/ValidationSample';
 import ScrollBox from './component/ScrollBox';
 import IterationSample from './component/IterationSample';
 import LifeCycleSample from './component/LifeCycleSample';
-import { Component } from 'react';
+import Counter from './component/Counter';
+import InfoConfrim from './component/InfoConfrim';
 
-//랜덤 색상을 생성 합니다.
-function getRandomColor(){
-  return '#' + Math.floor(Math.random() * 16777215).toString(16);
-}
-
-class App extends Component{
-  state = {
-    color: '#000000'
-  }
-  
-  handleClick = () =>{
-    this.setState({
-      color: getRandomColor()
-    });
-  }
-
-  render(){
-    return(
-      // <div>
-      //   <IterationSample />
-      // </div>
-      <div>
-        <button onClick={this.handleClick}>랜덤색상</button>
-        <LifeCycleSample color={this.state.color} />
-      </div>
-    );
-  };
+const App = () =>{
+  const [visible, setVisible] = useState(true);
+  return( 
+    <div>
+      <button onClick={() =>{
+        setVisible(!visible)
+      }}
+      >
+        {visible ? '숨기기' : '보이기'}
+      </button>
+      <hr />
+      {visible && <InfoConfrim /> }
+    </div>
+  )
 }
 
 export default App;
