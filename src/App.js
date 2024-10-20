@@ -8,7 +8,7 @@ import IterationSample from './component/IterationSample';
 import LifeCycleSample from './component/LifeCycleSample';
 import { Component } from 'react';
 
-//랜덤 색상을 생성 합니다. 주석처리
+//랜덤 색상을 생성 합니다. 주석처리22
 function getRandomColor(){
   return '#' + Math.floor(Math.random() * 16777215).toString(16);
 }
