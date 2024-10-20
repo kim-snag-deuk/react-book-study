@@ -82,9 +82,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
  5. yarn create react-app [프로젝트] //자바스크립트, yarn create react-app [프로젝트 이름] --template typescript  //타입스크립트
  6. Set-ExecutionPolicy Unrestricted // yarn 실행 안될경우 권한 설정
 
- 프로젝트 실행 : yarn start
+ - 프로젝트 실행 : yarn start
 
+ - git remote add origin https://github.com/kim-snag-deuk/react-book-study.git : git repository 설정
 
- git remote add origin https://github.com/kim-snag-deuk/react-book-study.git : git repository 설정
- git remote -v : git repository 확인
- git config --list : git정보
+ - git remote -v : git repository 확인
+ 
+ - git config --list : git정보
+
+ - git branch [브랜치명] : 브랜치 생성
+
+ - git switch [브랜치명] : 브랜치 스위치
