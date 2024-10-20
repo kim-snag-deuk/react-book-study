@@ -88,3 +88,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
  git remote add origin https://github.com/kim-snag-deuk/react-book-study.git : git repository 설정
  git remote -v : git repository 확인
  git config --list : git정보
+ git branch [브랜치명] : 브랜치 생성
+ git switch [브랜치명] : 브랜치 스위치
